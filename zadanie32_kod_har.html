@@ -1,0 +1,49 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="26">
+<!DOCTYPE html> 
+<html lang="pl"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Zadanie 32 – Haratym</title> 
+  </head> 
+<body bgcolor="yellow"> 
+      <div style="color:green;font-size:45px;"> 
+            <script type="text/javascript"> 
+          function pudelko(kolor_p,typ_p,wielkosc_p)   //początek konstruktora 
+  { 
+   this.kolor=kolor_p; 
+   this.typ=typ_p; 
+   this.wielkosc=wielkosc_p;   
+  }                                         //koniec konstruktora 
+              pudelko.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.kolor + " " + this.typ+ " " + this.wielkosc); 
+      }; 
+  var pudlo1 = new pudelko("Żółty", "Karton", "Małe"); // nowy obiekt pudlo1 
+  var pudlo2 = new pudelko("Czerwony", "Karton", "Średnie"); // nowy obiekt pudlo2 
+ 
+ pudlo1.wypisz(); // uruchomienie metody wypisz() dotyczącej pudla1 z użyciem alert(); 
+ pudlo2.wypisz(); // uruchomienie metody wypisz() dotyczącej pudla2 z użyciem alert(); 
+                document.write("Moje nazwisko to HARATYM  mam numer 4 a obiekt to pudelko"+"<br>"); 
+                document.write("dostęp do pól osoba1 i  osoba2"+"<br>"); 
+                document.write("czyli wypisanie danych"+"<br>"); 
+ 
+// poniżej dostęp/wypisanie danych  do pól pudelka1 i pudelka2 
+ document.write("pudelko pierwsze =>"+"   "+pudlo1.kolor+"   "+pudlo1.typ+"   "+pudlo1.wielkosc+"<br>"); 
+ document.write("pudelko pierwsze =>"+"   "+pudlo2.kolor+"   "+pudlo2.typ+"   "+pudlo2.wielkosc+"<br>"); 
+   </script> 
+ </div> 
+ <div style="color:blue;font-size:31px;"><br>    
+programowanie obiektowe: 
+Słowo kluczowe prototype stosowane jest do:<br> 
+.................tutaj opis...................... <br> 
+Słowo kluczowe new stosowane jest do:<br> 
+.................tutaj opis...................... <br>        
+</div> 
+</body> 
+</html> 
+  </textarea> 
+    </body> 
+</html>

@@ -1,0 +1,51 @@
+<html>  
+<head>  
+<title> 
+Przykład obliczenia V  i  Pc walca 
+</title> 
+<script language="JavaScript"> 
+function dlugosc_drabiny(D,X) 
+{ 
+D_har=parseFloat(D) 
+X_har=parseFloat(X) 
+L_har=D_har*D_har+X_har*X_har 
+document.getElementsByName('drabina')[0].value=L_har.toFixed(2);   /* na dokument  */ 
+alert("Drabina="+L_har.toFixed(2)+" ");                                                  
+pokaz1.innerHTML="Drabina="+L_har.toFixed(2)+" "+"<br>";        
+/*do okna Alert */ 
+/* do tabeli */ 
+ } 
+function kat_nachylenia(,h) 
+{ 
+   D_har=parseFloat(D) 
+   X_har=parseFloat(X)
+   Alfa= 
+   document.getElementsByName('alfa')[0].value=Alfa.toFixed(2); 
+   alert("Alfa="+Alfa.toFixed(2)+" "); 
+   pokaz2.innerHTML="Pc="+Pc_wynik.toFixed(2)+""; 
+} 
+       </script> 
+</head>  
+<body>  
+ Pobliczanie odleglosci  od drabiny i kata
+<br> <br> 
+<form name="formularz" action="..." onsubmit="V(this.promien.value,this.wysokosc.value); 
+Pc(this.promien.value,this.wysokosc.value);return false">   
+     Podaj d= 
+        <input  size="6"  name="wysokosc"> 
+     Podaj x= 
+        <input  size="6"  name="odleglosc"> 
+                       <br>   <br> 
+         <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+       Drabina= 
+           <input  size="6"  name="obj"> 
+       Alfa= 
+          <input  size="6"  name="pole"> 
+</form> 
+<table> 
+              <tr id="pokaz1"></tr> 
+              <tr id="pokaz2"></tr> 
+</table> 
+</body>  
+</html> 

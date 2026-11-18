@@ -1,0 +1,38 @@
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function AB_har() 
+   { 
+ var xa_har= parseFloat(document.getElementById('dlugosc').value); 
+ var ya_har= ; 
+        document.getElementById("nazwa").innerHTML ="Bok AB= "+b_har.toFixed(2)+" cm^2";  
+   } 
+  function BC_har() 
+   { 
+ var xb_har= parseFloat(document.getElementById('dlugosc').value); 
+ var yb_har= 4*a_har; 
+        document.getElementById("nazwa").innerHTML ="Bok BC= "+b_har.toFixed(2)+" cm";  
+   } 
+function AC_har() 
+   { 
+ var xc_har= parseFloat(document.getElementById('dlugosc').value); 
+ var yc_har= 4*a_har; 
+        document.getElementById("nazwa").innerHTML ="Bok AC= "+b_har.toFixed(2)+" cm";  
+   } 
+ </script>  
+Podaj x punktu A: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+Podaj y punktu A: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
+Podaj x punktu B: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
+Podaj y punktu B: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
+Podaj x punktu C: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
+Podaj y punktu C: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
+  <input type="button" name="AB" value="bok AB" Onclick="AB_har()"><br><br> 
+  <input type="button" name="BC" value="bok BC" Onclick="BC_har()"><br><br> 
+  <input type="button" name="AC" value="bok AC" Onclick="AC_har()"><br><br>
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html> 

@@ -1,0 +1,57 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="26">
+<html>  
+<head>  
+<title> 
+Przykład obliczenia pola  i  obwodu prostokata 
+</title> 
+<script language="JavaScript"> 
+function Pole_haratym(a,b) 
+{ 
+a_dana_har=parseFloat(a) 
+b_dana_har=parseFloat(b) 
+Pole_wynik=a_dana_har*b_dana_har 
+document.getElementsByName('pole')[0].value=Pole_wynik.toFixed(2);   /* na dokument  */ 
+alert("Pole="+Pole_wynik.toFixed(2)+" cm^3");                                                  
+wyprowadz_pole_har.innerHTML="Pole="+Pole_wynik.toFixed(2)+" cm^2"+"<br>";        
+/*do okna Alert */ 
+/* do tabeli */ 
+ } 
+function obwod_haratym(a,b) 
+{ 
+    a_dana_har=parseFloat(a) 
+    b_dana_har=parseFloat(b) 
+   obwod_wynik=a_dana_har+a_dana_har+b_dana_har+b_dana_har
+   document.getElementsByName('obw')[0].value=obw_wynik.toFixed(2); 
+   alert("Obwod="+obw_wynik.toFixed(2)+" cm"); 
+   wyprowadz_obwod_har.innerHTML="Obwod="+obw_wynik.toFixed(2)+"cm^2"; 
+} 
+       </script> 
+</head>  
+<body>  
+ Pobliczanie pola   i    obwodu prostokata
+<br> <br> 
+<form name="formularz" action="..." onsubmit="V(this.a.value,this.b.value); 
+Pc(this.a.value,this.b.value);return false">   
+     Podaj a= 
+        <input  size="6"  name="a"> 
+     Podaj b= 
+        <input  size="6"  name="b"> 
+                       <br>   <br> 
+         <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+       Pole= 
+           <input  size="6"  name="pole"> 
+       Obwod= 
+          <input  size="6"  name="obw"> 
+</form> 
+<table> 
+              <tr id="wyprowadz_pole_har"></tr> 
+              <tr id="wyprowadz_obwod_har"></tr> 
+</table> 
+</body>  
+</html> 
+  </textarea> 
+    </body> 
+</html>
